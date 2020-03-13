@@ -5,7 +5,7 @@ except ImportError:
 
 import opam
 
-with open("README.rst") as readme_file:
+with open("README.md") as readme_file:
     readme_string = readme_file.read()
 
 setup(
