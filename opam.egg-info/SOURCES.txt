@@ -1,0 +1,8 @@
+README.md
+setup.py
+opam/__init__.py
+opam/opam.py
+opam.egg-info/PKG-INFO
+opam.egg-info/SOURCES.txt
+opam.egg-info/dependency_links.txt
+opam.egg-info/top_level.txt

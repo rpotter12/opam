@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: opam
+Version: 1.0.0
+Summary: Python Library for opam
+Home-page: https://github.com/rpotter12/opam
+Author: Rohit Potter
+Author-email: rohitpotter12@gmail.com
+License: MIT
+Description: # opam
+        Python Library for opam file extraction
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
