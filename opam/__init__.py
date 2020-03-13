@@ -1,5 +1,5 @@
 from opam import opam
 load=opam.load
-version=opam.getversion
-maintainer=opam.getmaintainer
-synopsis=opam.getsynopsis
+getversion=opam.getversion
+getmaintainer=opam.getmaintainer
+getsynopsis=opam.getsynopsis
