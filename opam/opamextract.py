@@ -7,20 +7,17 @@ def load(file_name):
 def getversion(the_list):
     for individual in the_list:
         if 'opam-version' in individual:
-            version=individual.split('opam-version: ')
+            version=individual.split('"')
             return version[1]
 
 def getmaintainer(the_list):
     for individual in the_list:
         if 'maintainer' in individual:
-            version=individual.split('maintainer: ')
+            version=individual.split('"')
             return version[1]
 
 def getsynopsis(the_list):
     for individual in the_list:
         if 'synopsis' in individual:
-            version=individual.split('synopsis: ')
+            version=individual.split('"')
             return version[1]
-
-
-    

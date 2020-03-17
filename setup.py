@@ -10,7 +10,7 @@ with open("README.md") as readme_file:
 
 setup(
     name="opam",
-    version="1.0.5",
+    version="1.0.6",
     description="Python Library for opam",
     author="Rohit Potter",
     author_email="rohitpotter12@gmail.com",
