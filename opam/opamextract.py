@@ -1,23 +1,41 @@
 def load(file_name):
+    """
+    Returns a list which containing .opam file data line by line.
+    It opens file in read mode and split that line by line and
+    append it to he file_data.
+    """
     file_data = []
-    with open(file_name) as f:
+    with io.open(file_name, "r", encoding="utf-8") as f:
         file_data = [line.rstrip('\n') for line in f]
-    return file_data        
+    return file_data
 
-def getversion(the_list):
-    for individual in the_list:
+
+def get_version(file_data):
+    """
+    Return the value of opam-version.
+    """
+    for individual in file_data:
         if 'opam-version' in individual:
-            version=individual.split('"')
+            version = individual.split('"')
             return version[1]
 
-def getmaintainer(the_list):
-    for individual in the_list:
+
+def get_maintainer(file_data):
+    """
+    Return the value of maintainer.
+    """
+    for individual in file_data:
         if 'maintainer' in individual:
-            version=individual.split('"')
-            return version[1]
+            maintainer = individual.split('"')
+            return maintainer[1]
 
-def getsynopsis(the_list):
-    for individual in the_list:
+
+def get_synopsis(file_data):
+    """
+    Return the value of synopsis.
+    """
+    for individual in file_data:
         if 'synopsis' in individual:
-            version=individual.split('"')
-            return version[1]
+            synopsis = individual.split('"')
+            return synopsis[1]
+
